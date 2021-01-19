@@ -1,3 +1,4 @@
 # Technical-Documentation-Page
-CodePen Technical Documentation Page n/
+CodePen Technical Documentation Page
+
 Python Documention from Wikipedia.
