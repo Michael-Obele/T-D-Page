@@ -23,6 +23,8 @@ else {
 document.getElementById("hide").style.display = "block";
 };
 }
+
+
 // function size1() {
 //   function size() {
 //     if (window.innerWidth < 768) {
