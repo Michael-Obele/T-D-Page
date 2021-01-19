@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section>header {
+    padding-left: 20px;
+    font-size: 23px;
+    font-weight: 580;
+    text-transform: capitalize;
+}
+
+section>h5 {
+    padding-left: 20px;
+    font-size: 19px;
+    font-weight: 580;
+}
+
+section>p {
+    padding-left: 45px;
+}
+
+section>ul {
+    padding-left: 105px;
+}
+
+section>ul>li>code {
+    background-color: rgba(172, 197, 241, 0.514);
+    border-radius: 2px;
+    text-align: center;
+    padding: 0.7px;
+    color: black;
+}
+
+section>pre {
+    padding: 15px;
+    margin: 10px 45px;
+    background-color: black;
+    border-radius: 9px;
+    color: blanchedalmond;
+}
+
+section>pre>.r {
+    color: crimson;
+}
+
+section>pre>.g {
+    color: green;
+}
+
+section>pre>.p {
+    color: rgb(196, 11, 196);
+}
+/* Small screen */
+.navbar{
+    color: blanchedalmond;
+    font-weight: bolder;
+    font-size: 23px;
+}
+.wrapper {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .wrapper .sidebar a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  }
+  .wrapper .sidebar a.icon {
+      width: 20px;
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 0;
+  }
+  .wrapper .sidebar ul{
+      display:list-item;
+  }
+  /*Large screen  */
+
+
+@media (min-width:768px) {
+    .wrapper {
+        position: fixed;
+        min-width: 280px;
+        width: 300px;
+        height: 100%;
+        border-right:solid;
+      }
+      
+      .wrapper .sidebar {
+          position: fixed;
+          width: 300px;
+          height: 100%;
+          background-color: #343a40;
+          padding: 20px 0 0;
+          border-right: 2px solid black;
+          color: white;
+      }
+      .wrapper .sidebar ul{
+          height: 94%;
+          overflow-y: auto;
+          overflow-x: hidden;
+      }
+      
+      .wrapper .sidebar ul li {
+          padding: 7px;
+          border-bottom: 1px solid darkgray;
+          border-top: 1px solid powderblue;
+      }
+      
+      .wrapper .sidebar .last {
+          border-bottom: none;
+      }
+      
+      .wrapper .sidebar ul li a {
+          color: rgba(255, 255, 255, .5);
+          display: block;
+      }
+      
+      .wrapper .sidebar ul li a:hover {
+          color: white;
+      }
+      
+      .wrapper .sidebar ul li a:active {
+          color: white;
+      }
+      .wrapper .sidebar a.icon {
+        width: 20px;
+      display: none;
+      position: absolute;
+      right: 12px;
+      top: 0;
+    }
+
+      .navbar {
+          padding: 0 10px 15px;
+          text-align: center;
+      }
+      main {
+          margin-left: 300px;
+      }
+}

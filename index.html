@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="js.js"></script>
+  <link rel="stylesheet" href="stlyes.css">
+</head>
+
+<body onload="size()">
+  <nav id="navbar" class="wrapper">
+    <div class="sidebar">
+      <div id="head">
+      <header class="navbar">Python Documentation</header></div>
+      <ul id="hide" class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Naming">Naming</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#History">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Syntax_and_semantics">Syntax and semantics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Programming_Examples">Programming Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Libraries">Libraries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Development_Environments">Development Environments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Cross_Compilers_To_Other_Languages">Cross Compilers To Other Languages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Uses">Uses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Languages_Influenced_By_Python">Languages Influenced By Python</a>
+        </li>
+        <li class="nav-item last">
+          <a class="nav-link " href="#Reference">Reference</a>
+        </li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="size()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+
+      <p>
+        Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a
+        simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing,
+        together with its ,interpreted nature, make it an ideal language for scripting and rapid application development
+        in many areas on most platforms.</p>
+
+      <p>The Python interpreter and the extensive standard library are freely available in source or binary form for all
+        major platforms from the Python Web site, <a href="https://www.python.org/">https://www.python.org</a> , and may
+        be freely distributed. The same site also contains distributions of and pointers to many free third party Python
+        modules, programs and tools, and additional documentation.</p>
+
+      <p>The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other
+        languages callable from C). Python is also suitable as an extension language for customizable applications.
+      </p>
+      <section class="main-section" id="Naming">
+        <header>
+          Naming
+        </header>
+        <p>
+          Python's name is derived from the British comedy group Monty Python, whom Python creator Guido van Rossum
+          enjoyed while developing the language. Monty Python references appear frequently in Python code and culture;
+          for example, the metasyntactic variables often used in Python literature are spam and eggs instead of the
+          traditional foo and bar. The official Python documentation also contains various references to Monty Python
+          routines.
+        </p>
+      </section>
+
+    </section>
+    <section class="main-section" id="History">
+      <header>History</header>
+      <p>
+        Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the
+        Netherlands as a successor to ABC programming language, which was inspired by SETL, capable of exception
+        handling and interfacing with the Amoeba operating system Its implementation began in December 1989. Van Rossum
+        shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his
+        "permanent vacation" from his responsibilities as Python's Benevolent Dictator For Life, a title the Python
+        community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker. He now
+        shares his leadership as a member of a five-person steering council. In January 2019, active Python core
+        developers elected Brett Cannon, Nick Coghlan, Barry Warsaw, Carol Willing and Van Rossum to a five-member
+        "Steering Council" to lead the project. Guido van Rossum has since then withdrawn his nomination for the 2020
+        Steering council.</p>
+
+      <p>Python 2.0 was released on 16 October 2000 with many major new features, including a cycle-detecting garbage
+        collector and support for Unicode.</p>
+
+      <p>Python 3.0 was released on 3 December 2008. It was a major revision of the language that is not completely
+        backward-compatible. Many of its major features were backported to Python 2.6.x and 2.7.x version series.
+        Releases of Python 3 include the 2to3 utility, which automates (at least partially) the translation of Python 2
+        code to Python 3.</p>
+
+      <p>Python 2.7's end-of-life date was initially set at 2015 then postponed to 2020 out of concern that a large body
+        of existing code could not easily be forward-ported to Python 3. No more security patches or other improvements
+        will be released for it. With Python 2's end-of-life, only Python 3.6.x and later are supported.
+      </p>
+    </section>
+    <section class="main-section" id="Syntax_and_semantics">
+      <header>Syntax and semantics</header>
+      <p>
+        Python is meant to be an easily readable language. Its formatting is visually uncluttered, and it often uses
+        English keywords where other languages use punctuation. Unlike many other languages, it does not use curly
+        brackets to delimit blocks, and semicolons after statements are optional. It has fewer syntactic exceptions and
+        special cases than C or Pascal.</p>
+
+      <h5 id="Indentation">Indentation</h5>
+      <p>Python uses whitespace indentation, rather than curly brackets or keywords, to delimit blocks. An increase in
+        indentation comes after certain statements; a decrease in indentation signifies the end of the current block.
+        Thus, the program's visual structure accurately represents the program's semantic structure. This feature is
+        sometimes termed the off-side rule, which some other languages share, but in most languages indentation doesn't
+        have any semantic meaning.</p>
+
+      <h5 id="Statements">Statements and control flow</h5>
+      <p>Python's statements include (among others):</p>
+      <ul>
+        <li>
+          The assignment statement (token '=', the equals sign).</li>
+        <li>The <code>if</code> statement, which conditionally executes a block of code, along with <code>else</code>
+          and <code>elif</code> (a contraction of else-if).</li>
+        <li>The <code>for</code> statement, which iterates over an iterable object, capturing each element to a local
+          variable for use by the attached block.</li>
+        <li>The <code>while</code> statement, which executes a block of code as long as its condition is true.</li>
+        <li>The <code>try</code> statement, which allows exceptions raised in its attached code block to be caught and
+          handled by <code>except</code> clauses; it also ensures that clean-up code in a <code>finally</code> block
+          will always be run regardless of how the block exits.</li>
+        <li>The <code>raise</code> statement, used to raise a specified exception or re-raise a caught exception.</li>
+        <li>The <code>class</code> statement, which executes a block of code and attaches its local namespace to a
+          class, for use in object-oriented programming.</li>
+        <li>The <code>def</code> statement, which defines a function or method.</li>
+        <li>The <code>with</code> statement, from Python 2.5 released in September 2006, which encloses a code block
+          within a context manager (for example, acquiring a lock before the block of code is run and releasing the lock
+          afterwards, or opening a file and then closing it), allowing Resource Acquisition Is Initialization
+          (RAII)-like behavior and replaces a common try/finally idiom.</li>
+        <li>The <code>break</code> statement, exits from the loop.</li>
+        <li>The <code>continue</code> statement, skips this iteration and continues with the next item.</li>
+        <li>The <code>del</code> statement, removes a variable, which means the reference from the name to the value is
+          deleted and trying to use that variable cause an error. Deleted variable can be reassigned to later as normal.
+        </li>
+        <li>The <code>pass</code> statement, which serves as a NOP. It is syntactically needed to create an empty code
+          block.</li>
+        <li>The <code>assert</code> statement, used during debugging to check for conditions that ought to apply.</li>
+        <li>The <code>yield</code> statement, which returns a value from a generator function. From Python 2.5,
+          <code>yield</code> is also an operator. This form is used to implement coroutines.
+        </li>
+        <li>The <code>return</code> statement, used to return a value from a function.</li>
+        <li>The <code>import</code> statement, which is used to import modules whose functions or variables can be used
+          in the current program.</li>
+        <li>The <code>print</code> statement was changed to the <code>print()</code> function in Python 3.
+        </li>
+      </ul>
+
+      <p>The assignment statement ('=') operates by binding a name as a reference to a separate, dynamically allocated
+        object. Since the name's storage location doesn't contain the indicated value, it is improper to call it a
+        variable. Names may be subsequently rebound at any time to any object. Since a name is a generic reference
+        holder it is unreasonable to associate a fixed data type with it. However at a given time, a name will be bound
+        to some object, which will have a type. This association is referred to as dynamic typing.</p>
+
+      <p>Python does not support tail call optimization or first-class continuations, and, according to Guido van
+        Rossum, it never will. However, better support for coroutine-like functionality is provided in 2.5, by extending
+        Python's generators. Before 2.5, generators were lazy iterators; information was passed unidirectionally out of
+        the generator. From Python 2.5, it is possible to pass information back into a generator function, and from
+        Python 3.3, the information can be passed through multiple stack levels.</p>
+
+      <h5 id="Expressions">Expressions</h5>
+      <p>Some Python expressions are similar to languages such as C and Java, while some are not:</p>
+      <ul>
+        <li>
+          Addition, subtraction, and multiplication are the same, but the behavior of division differs. There are two
+          types of divisions in Python. They are floor division (or integer division) <code>//</code> and floating
+          point<code>/</code>division. Python also added the <code>**</code> operator for exponentiation.</li>
+        <li>From Python 3.5, the new <code>@</code> infix operator was introduced. It is intended to be used by
+          libraries such as NumPy for matrix multiplication.</li>
+        <li>From Python 3.8, the syntax <code>:=</code>, called the 'walrus operator' was introduced. It assigns values
+          to variables as part of a larger expression.</li>
+        <li>In Python, <code>==</code> compares by value, versus Java, which compares numerics by value and objects by
+          reference. (Value comparisons in Java on objects can be performed with the <code>equals()</code> method.)
+          Python's <code>is</code> operator may be used to compare object identities (comparison by reference). In
+          Python, comparisons may be chained, for example <code>a &lt;= b &lt;= c.</code></li>
+        <li>Python uses the words <code>and</code>, <code>or</code>, <code>not</code> for its boolean operators rather
+          than the symbolic <code>&&</code>, <code>||</code>, <code>!</code> used in Java and C.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Programming_Examples">
+      <header>Programming Examples</header>
+      <p>Hello world program:</p>
+      <pre>
+<code class="r">print</code>('<code class="g">Hello, world!'</code>)
+</pre>
+<p>Program to calculate the factorial of a positive integer:</p>
+<pre>
+n = <code class="g">int</code>(<code class="g">input</code>(<code class="r">'Type a number, and its factorial will be printed: '</code>))
+
+if n &lt; 0:
+    <code class="g">raise</code> <code class="r"><b>ValueError</b></code>(<code class="r">'You must enter a non negative integer'</code>)
+
+fact = 1
+
+<code class="g">for</code> i <code class="p">in</code> <code class="g">range</code>(2, n + 1):
+    fact *= i
+
+<code class="g">print</code>(fact)
+</pre>
+    </section>
+<section class="main-section" id="Libraries">
+  <header>Libraries</header>
+  <p>
+    Python's large standard library, commonly cited as one of its greatest strengths, provides tools suited to many
+    tasks. For Internet-facing applications, many standard formats and protocols such as MIME and HTTP are supported. It
+    includes modules for creating graphical user interfaces, connecting to relational databases, generating pseudorandom
+    numbers, arithmetic with arbitrary-precision decimals, manipulating regular expressions, and unit testing.</p>
+
+  <p>Some parts of the standard library are covered by specifications (for example, the Web Server Gateway Interface
+    (WSGI) implementation wsgiref follows PEP 333), but most modules are not. They are specified by their code, internal
+    documentation, and test suites. However, because most of the standard library is cross-platform Python code, only a
+    few modules need altering or rewriting for variant implementations.</p>
+
+  <p>As of November 2019, the Python Package Index (PyPI), the official repository for third-party Python software,
+    contains over 200,000 packages with a wide range of functionality, including:
+  </p>
+  <ul>
+    <li>Automation</li>
+    <li>Data analytics</li>
+    <li>Databases</li>
+    <li>Documentation</li>
+    <li>Graphical user interfaces</li>
+    <li>Image processing</li>
+    <li>Machine learning</li>
+    <li>Mobile App</li>
+    <li>Multimedia</li>
+    <li>Computer Networking</li>
+    <li>Scientific computing</li>
+    <li>System administration</li>
+    <li>Test frameworks</li>
+    <li>Text processing</li>
+    <li>Web frameworks</li>
+    <li>Web scraping</li>
+  </ul>
+</section>
+
+<section class="main-section" id="Development_Environments">
+  <header>
+    Development Environments
+  </header>
+  <p>
+    Most Python implementations (including CPython) include a read–eval–print loop (REPL), permitting them to function
+    as a command line interpreter for which the user enters statements sequentially and receives results immediately.The
+    most used python developing software or python IDE is PyCharm by JetBrains. A lightweight code editor can be Visual
+    Studio Code by Microsoft.</p>
+
+  <p>Other shells, including IDLE and IPython, add further abilities such as improved auto-completion, session state
+    retention and syntax highlighting.</p>
+
+  <p>As well as standard desktop integrated development environments, there are Web browser-based IDEs; SageMath
+    (intended for developing science and math-related Python programs); PythonAnywhere, a browser-based IDE and hosting
+    environment; and Canopy IDE, a commercial Python IDE emphasizing scientific computing.
+  </p>
+</section>
+<section class="main-section" id="Cross_Compilers_To_Other_Languages">
+  <header>Cross compilers to other languages</header>
+  <p>
+    There are several compilers to high-level object languages, with either unrestricted Python, a restricted subset of
+    Python, or a language similar to Python as the source language:
+  </p>
+  <ul>
+    <li>Cython compiles Python to C and C++.</li>
+    <li>Google's Grumpy (latest release in 2017) compiles Python 2 to Go.</li>
+    <li>IronPython follows a similar approach in order to run Python programs on the .NET Common Language Runtime.</li>
+    <li>Jython enables the use of the Java class library from a Python program.</li>
+    <li>MyHDL compiles Python to VHDL.</li>
+    <li>Nuitka compiles Python into C++.
+      Numba uses LLVM to compile Python to machine code.</li>
+    <li>Pyjs (latest release in 2012) compiles Python to JavaScript.</li>
+    <li>Pyrex (latest release in 2010) compiles to C. </li>
+    <li>Shed Skin (latest release in 2013) compiles to C++ respectively.</li>
+    <li>Pythran compiles Python to C++.</li>
+    <li>RPython can be compiled to C, and is used to build the PyPy interpreter of Python.</li>
+    <li>Transcrypt compiles Python to JavaScript.</li>
+  </ul>
+</section>
+<section class="main-section" id="Uses">
+  <header>Uses</header>
+  <p>
+    Since 2003, Python has consistently ranked in the top ten most popular programming languages in the TIOBE
+    Programming Community Index where, as of February 2020, it is the third most popular language (behind Java, and C).
+    It was selected Programming Language of the Year in 2007, 2010, and 2018.</p>
+
+  <p>An empirical study found that scripting languages, such as Python, are more productive than conventional languages,
+    such as C and Java, for programming problems involving string manipulation and search in a dictionary, and
+    determined that memory consumption was often "better than Java and not much worse than C or C++".</p>
+
+  <p>Large organizations that use Python include Wikipedia, Google, Yahoo!, CERN, NASA, Facebook, Amazon, Instagram,
+    Spotify and some smaller entities like ILM and ITA. The social news networking site Reddit is written entirely in
+    Python.</p>
+
+  <p>Python can serve as a scripting language for web applications, e.g., via mod_wsgi for the Apache web server. With
+    Web Server Gateway Interface, a standard API has evolved to facilitate these applications. Web frameworks like
+    Django, Pylons, Pyramid, TurboGears, web2py, Tornado, Flask, Bottle and Zope support developers in the design and
+    maintenance of complex applications. Pyjs and IronPython can be used to develop the client-side of Ajax-based
+    applications. SQLAlchemy can be used as a data mapper to a relational database. Twisted is a framework to program
+    communications between computers, and is used (for example) by Dropbox.</p>
+
+  <p>Libraries such as NumPy, SciPy and Matplotlib allow the effective use of Python in scientific computing, with
+    specialized libraries such as Biopython and Astropy providing domain-specific functionality. SageMath is a
+    mathematical software with a notebook interface programmable in Python: its library covers many aspects of
+    mathematics, including algebra, combinatorics, numerical mathematics, number theory, and calculus. OpenCV has python
+    bindings with a rich set of features for computer vision and image processing.</p>
+
+  <p>Python has been successfully embedded in many software products as a scripting language, including in finite
+    element method software such as Abaqus, 3D parametric modeler like FreeCAD, 3D animation packages such as 3ds Max,
+    Blender, Cinema 4D, Lightwave, Houdini, Maya, modo, MotionBuilder, Softimage, the visual effects compositor Nuke, 2D
+    imaging programs like GIMP, Inkscape, Scribus and Paint Shop Pro, and musical notation programs like scorewriter and
+    capella. GNU Debugger uses Python as a pretty printer to show complex structures such as C++ containers. Esri
+    promotes Python as the best choice for writing scripts in ArcGIS. It has also been used in several video games, and
+    has been adopted as first of the three available programming languages in Google App Engine, the other two being
+    Java and Go.</p>
+
+  <p>Python is commonly used in artificial intelligence projects and machine learning projects with the help of
+    libraries like TensorFlow, Keras, Pytorch and Scikit-learn. As a scripting language with modular architecture,
+    simple syntax and rich text processing tools, Python is often used for natural language processing.</p>
+
+  <p>Many operating systems include Python as a standard component. It ships with most Linux distributions, AmigaOS 4
+    (using Python 2.7), FreeBSD (as a package), NetBSD, OpenBSD (as a package) and macOS and can be used from the
+    command line (terminal). Many Linux distributions use installers written in Python: Ubuntu uses the Ubiquity
+    installer, while Red Hat Linux and Fedora use the Anaconda installer. Gentoo Linux uses Python in its package
+    management system, Portage.</p>
+
+  <p>Python is used extensively in the information security industry, including in exploit development.</p>
+
+  <p>Most of the Sugar software for the One Laptop per Child XO, now developed at Sugar Labs, is written in Python. The
+    Raspberry Pi single-board computer project has adopted Python as its main user-programming language.</p>
+
+  <p>LibreOffice includes Python, and intends to replace Java with Python. Its Python Scripting Provider is a core
+    feature since Version 4.0 from 7 February 2013.
+  </p>
+</section>
+<section class="main-section" id="Languages_Influenced_By_Python">
+  <header>
+    Languages influenced by Python
+  </header>
+  <p>
+    Python's design and philosophy have influenced many other programming languages:
+  </p>
+  <ul>
+    <li>Boo uses indentation, a similar syntax, and a similar object model.</li>
+    <li>Cobra uses indentation and a similar syntax, and its Acknowledgements document lists Python first among
+      languages that influenced it.</li>
+    <li>CoffeeScript, a programming language that cross-compiles to JavaScript, has Python-inspired syntax.</li>
+    <li>ECMAScript/JavaScript borrowed iterators and generators from Python.</li>
+    <li>GDScript, a scripting language very similar to Python, built-in to the Godot game engine.</li>
+    <li>Go is designed for the "speed of working in a dynamic language like Python" and shares the same syntax for
+      slicing arrays.</li>
+    <li>Groovy was motivated by the desire to bring the Python design philosophy to Java.</li>
+    <li>Julia was designed to be "as usable for general programming as Python".</li>
+    <li>Nim uses indentation and similar syntax.</li>
+    <li>Ruby's creator, Yukihiro Matsumoto, has said: "I wanted a scripting language that was more powerful than Perl,
+      and more object-oriented than Python. That's why I decided to design my own language."</li>
+    <li>Swift, a programming language developed by Apple, has some Python-inspired syntax.</li>
+  </ul>
+</section>
+<section class="main-section" id="Reference">
+  <header>
+    Reference
+  </header>
+  <p>All the documentation in this page is taken from <a
+      href="https://en.wikipedia.org/wiki/Python_(programming_language)">Wikipedia</a></p>
+</section>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>
