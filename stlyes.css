@@ -80,6 +80,16 @@ section>pre>.p {
   .wrapper .sidebar ul{
       display:list-item;
   }
+  .wrapper .sidebar ul li a {
+    color: rgba(255, 255, 255, .5);
+}
+
+.wrapper .sidebar ul li a:hover {
+    color: white;
+}
+.wrapper .sidebar ul .active{
+    color: white;
+}
   /*Large screen  */
 
 
